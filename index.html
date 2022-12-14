@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto e5</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/mediaqueries.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar-izq">
+        <img
+          src="assets/img-header/nucbazappiicon 1.png"
+          alt="logopizza"
+          class="logo"
+        />
+        <a class="home-flex" href="#hero">Home</a>
+      </nav>
+
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li>
+            <a class="home" href="#hero"
+              ><img src="assets/img-header/Home.png" alt="iconohome" />Home</a
+            >
+          </li>
+          <label for="cart-toggle" class="cart-label">
+            <img
+              src="assets/img-header/Icon Cart.png"
+              alt="Carrito de compras"
+              class="cart-icon"
+            />
+          </label>
+          <input type="checkbox" id="cart-toggle" />
+
+          <div class="cart">
+            <h2>Tu Pedido</h2>
+            <div class="cart-item">
+              <img src="assets/img-header/qjamone.png" alt="imgpizza1" />
+              <div class="item-info">
+                <h3 class="item-title">¡Q!Jamone!</h3>
+                <p class="item-bid">Precio</p>
+                <span class="item-price">350 $</span>
+              </div>
+              <div class="item-handler">
+                <span class="quantity-handler down">-</span>
+                <span class="item-quantity">2</span>
+                <span class="quantity-handler up">+</span>
+              </div>
+            </div>
+            <div class="cart-item">
+              <img src="assets/img-header/lamaradona.png" alt="imgpizza2" />
+              <div class="item-info">
+                <h3 class="item-title">La Maradona</h3>
+                <p class="item-bid">Precio</p>
+                <span class="item-price">450 $</span>
+              </div>
+              <div class="item-handler">
+                <span class="quantity-handler down">-</span>
+                <span class="item-quantity">2</span>
+                <span class="quantity-handler up">+</span>
+              </div>
+            </div>
+
+            <div class="cart-item">
+              <img src="assets/img-header/leomessi.png" alt="imgpizza3" />
+              <div class="item-info">
+                <h3 class="item-title">Leo Messi</h3>
+                <p class="item-bid">Precio</p>
+                <span class="item-price">10 $</span>
+              </div>
+              <div class="item-handler">
+                <span class="quantity-handler down">-</span>
+                <span class="item-quantity">1</span>
+                <span class="quantity-handler up">+</span>
+              </div>
+            </div>
+            <div class="cart-item">
+              <img src="assets/img-header/nickgi.png" alt="imgpizza4" />
+              <div class="item-info">
+                <h3 class="item-title">Nick Gi</h3>
+                <p class="item-bid">Precio</p>
+                <span class="item-price">Gratis $</span>
+              </div>
+              <div class="item-handler">
+                <span class="quantity-handler down">-</span>
+                <span class="item-quantity">2</span>
+                <span class="quantity-handler up">+</span>
+              </div>
+            </div>
+
+            <span class="divider"></span>
+
+            <div class="cart-total">
+              <p>Total:</p>
+              <h3>Productos (7)</h3>
+              <span>1.610 $</span>
+            </div>
+            <a href="index.html" class="btn-add">Comprar</a>
+          </div>
+
+          <label for="user-toggle" class="user-label">
+            <img
+              src="assets/img-header/Icon Profile.png"
+              alt="Carrito de compras"
+              class="user-icon"
+            />
+          </label>
+          <input type="checkbox" id="user-toggle" />
+
+          <div class="user">
+            <h2>Usuario</h2>
+            <div class="user-item">
+              <div class="item-infouser">
+                <h3 class="item-titleuser">Nickname:</h3>
+              </div>
+              <input
+                type="email"
+                placeholder="Email"
+                class="quantity-handler downuser"
+              />
+            </div>
+            <div class="user-item">
+              <div class="item-infouser">
+                <h3 class="item-titleuser">Contraseña:</h3>
+              </div>
+              <input
+                type="password"
+                placeholder="Password"
+                class="quantity-handler downuser"
+              />
+            </div>
+            <span class="divideruser"></span>
+            <a href="index.html" class="btn-adduser">Ingresar</a>
+          </div>
+          <div class="overlay"></div>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="hero">
+        <div class="hero-info">
+          <h1>Si tenes Zappi,</h1>
+          <h2>tenes Nucba.</h2>
+          <p>Buscá lo que quieras y nucba te quedes sin comida.</p>
+          <a href="#">VER MÁS</a>
+        </div>
+        <img
+          src="assets/img-hero/Captura-removebg-preview.png"
+          alt="iconospizza"
+        />
+      </section>
+   
+   
+      <!--recomendaciones-->
+      <section> 
+        <h4>Hoy te recomendamos</h4>
+        <div class="recomendados"> 
+            <div class="cajaReco">
+                <div><img src="assets/img-recomendados/1.png" alt=""></div>
+                <div class="cajaRecoPrecio">
+                    <span class="">Bennezianna </span>
+                     <p>La mas completa</p>
+                    <span class="letraGradiente">$3650</span>
+                </div>
+                <div>
+                    <button>Agregar</button>
+                </div>
+            </div>
+            <div class="cajaReco">
+                <div><img src="assets/img-recomendados/2.png" alt=""></div>
+                <div class="cajaRecoPrecio">
+                    <span>Tronco-pizza </span>
+                     <p>Para todo el día</p>
+                    <span class="letraGradiente">$870</span>
+                </div>
+                <div>
+                    <button>Agregar</button>
+                </div>
+            </div>
+            <div class="cajaReco">
+                <div><img src="assets/img-recomendados/3.png" alt=""></div>
+                <div class="cajaRecoPrecio">
+                    <span>Papas|Provenzal </span>
+                     <p>Van como piña</p>
+                    <span class="letraGradiente">$360</span>
+                </div>
+                <div>
+                    <button>Agregar</button>
+                </div>
+            </div>
+        </div>
+        </div>
+        </section>
+
+
+
+
+        <!--categorias-->
+        <section>
+            <h4>Categorias</h4>
+            <div class="cajaCategorias">
+                <div class="cajitaCategoria">
+                    <div><img src="assets/img-categorias/1.png" alt=""></div>
+                    <div>Pizzas</div>
+                    <div><button></button></div>
+                </div>
+                <div class="cajitaCategoria">
+                    <div><img src="assets/img-categorias/2.png" alt=""></div>
+                    <div>Hamburguesas</div>
+                    <div><button></button></div>
+                </div>
+                <div class="cajitaCategoria">
+                    <div><img src="assets/img-categorias/3.png" alt=""></div>
+                    <div>Napapuki</div>
+                    <div><button></button></div>
+                </div>
+                <div class="cajitaCategoria">
+                    <div><img src="assets/img-categorias/4.png" alt=""></div>
+                    <div>Individuales</div>
+                    <div><button></button></div>
+                </div>
+                <div class="cajitaCategoria">
+                    <div><img src="assets/img-categorias/5.png" alt=""></div>
+                    <div>Wraps</div>
+                    <div><button></button></div>
+                </div>
+                <div class="cajitaCategoria">
+                    <div><img src="assets/img-categorias/6.png" alt=""></div>
+                    <div>Mexican Food</div>
+                    <div><button></button></div>
+                </div>
+                <div class="cajitaCategoria">
+                    <div><img src="assets/img-categorias/7.png" alt=""></div>
+                    <div>Batiduski</div>
+                    <div><button></button></div>
+                </div>
+            </div>
+              
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <section id="Populares">
+        <h2>Los más populares</h2>
+        <div class="cards-popu">
+          <div class="rectangle">
+            <div>
+              <img
+                src="assets/img-populares/Photo Menula mr. pit.png"
+                alt="Imagen Mr. Pit"
+                class="foto-popu"
+              />
+            </div>
+            <div class="info-popu">
+              <h3>La Mr. Pit</h3>
+              <p>Solo para expertos</p>
+            </div>
+            <div class="price-popu">
+              <p>$350</p>
+              <button>Agregar</button>
+            </div>
+          </div>
+
+          <div class="rectangle">
+            <div>
+              <img
+                src="assets/img-populares/Photo Menuq jamon.png"
+                alt="Imagen ¡Q' Jamone!"
+                class="foto-popu"
+              />
+            </div>
+            <div class="info-popu">
+              <h3>¡Q' Jamone!</h3>
+              <p>c/ jamón crudo</p>
+            </div>
+            <div class="price-popu">
+              <p>$350</p>
+              <button>Agregar</button>
+            </div>
+          </div>
+
+          <div class="rectangle">
+            <div>
+              <img
+                src="assets/img-populares/Photo Menucharly.png"
+                alt="Imagen La Charly García"
+                class="foto-popu"
+              />
+            </div>
+            <div class="info-popu">
+              <h3>La Charly García</h3>
+              <p>¡BASTA!</p>
+            </div>
+            <div class="price-popu">
+              <p>$380</p>
+              <button>Agregar</button>
+            </div>
+          </div>
+
+          <div class="rectangle">
+            <div>
+              <img
+                src="assets/img-populares/Photo Menumaradona.png"
+                alt="Imagen La Maradona"
+                class="foto-popu"
+              />
+            </div>
+            <div class="info-popu">
+              <h3>La Maradona</h3>
+              <p>¡Eterna!</p>
+            </div>
+            <div class="price-popu">
+              <p>$450</p>
+              <button>Agregar</button>
+            </div>
+          </div>
+
+          <div class="rectangle">
+            <div>
+              <img
+                src="assets/img-populares/Photo Menupicantovich.png"
+                alt="Imagen Picantovich"
+                class="foto-popu"
+              />
+            </div>
+            <div class="info-popu">
+              <h3>Picantovich</h3>
+              <p>Pica 2 veces</p>
+            </div>
+            <div class="price-popu">
+              <p>$750</p>
+              <button>Agregar</button>
+            </div>
+          </div>
+
+          <div class="rectangle">
+            <div>
+              <img
+                src="assets/img-populares/Photo Menuhasbulla.png"
+                alt="Imagen La Hasbulla"
+                class="foto-popu"
+              />
+            </div>
+            <div class="info-popu">
+              <h3>La Hasbulla</h3>
+              <p>En honor al 1</p>
+            </div>
+            <div class="price-popu">
+              <p>$990</p>
+              <button>Agregar</button>
+            </div>
+          </div>
+
+          <div class="rectangle">
+            <div>
+              <img
+                src="assets/img-populares/Photo Menuleomessi.png"
+                alt="Imagen Leo Messi"
+                class="foto-popu"
+              />
+            </div>
+            <div class="info-popu">
+              <h3>Leo Messi</h3>
+              <p>¡De pié señores!</p>
+            </div>
+            <div class="price-popu">
+              <p>$10</p>
+              <button>Agregar</button>
+            </div>
+          </div>
+
+          <div class="rectangle">
+            <div>
+              <img
+                src="assets/img-populares/Photo Menunickgi.png"
+                alt="Imagen Nick Gi"
+                class="foto-popu"
+              />
+            </div>
+            <div class="info-popu">
+              <h3>Nick Gi</h3>
+              <p>La que desaparece</p>
+            </div>
+            <div class="price-popu">
+              <p>Gratis</p>
+              <button>Agregar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li><a href="#" class="footer__nav__link">Términos de Uso</a></li>
+        <li><a href="#" class="footer__nav__link">Trabajá con Nosotros</a></li>
+        <li><a href="#" class="footer__nav__link">Soporte</a></li>
+      </ul>
+      <p class="footer__text">
+        Hecho con ❤️ en
+        <span class="footer__text--strong">NUCBAZAPPI</span>
+      </p>
+    </footer>
+  </body>
+</html>
